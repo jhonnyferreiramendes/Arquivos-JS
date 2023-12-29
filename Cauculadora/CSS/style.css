@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica";
+
+}
+
+body{
+    background-color: dimgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+
+}
+
+#calc{
+    width: 400px;
+    padding: .5em;
+    background-color:rgba(192, 192, 192, 0.911);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border-color: black;
+    border: 3px solid;
+    
+
+}
+
+#calc h2{
+    font-size: 2em;
+    font-weight: 800;
+    color: black;
+}
+
+#operations{
+    text-align: right;
+    
+}
+
+#previous-operation{
+    color:black;
+    padding: 0.2em;
+    overflow-wrap: break-word; /*quebrar a linha empre ultrapassar a bordar*/
+    min-height: 1.6em;
+}
+
+#current-operation{
+    padding: 0.2em;
+    overflow-wrap: break-word; /*quebrar a linha empre ultrapassar a bordar*/
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    color: black;
+
+}
+
+#buttons-containers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*Criar colunas*/
+    border:2px solid transparent;
+    border-color: black;
+
+}
+
+#buttons-containers button{
+    border:2px solid transparent;
+    border-color: black;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color:deepskyblue;
+    cursor: pointer; /*mudar ponteiro do moiuse ao fica nos botoes da cauculadora*/
+    font-weight: bold; /*deixar negrito*/
+
+
+}
+
+#buttons-containers .number{
+    background-color: dodgerblue;
+}
+
+#buttons-containers :hover{
+    background-color:darkblue
+}
+
+#buttons-containers .number:hover{
+    background-color:blue
+}
+
+#buttons-containers #equal-btn{
+    background-color:lightskyblue
+}
+#buttons-containers #equal-btn:hover{
+    background-color:darkblue
+}
+
+

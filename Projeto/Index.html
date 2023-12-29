@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particularidades</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div id = "tasks-container">
+        <div id="tasks-header">
+            <h2>Salve sua proxima tarefa </h2>
+            <form action="" id="add-task-form">
+                <input type="text-title" id="task-title" placeholder="O que você vai fazer?">
+                <button id="add-btn" type="submit"> 
+                    <ion-icon id="icon-mais" name="add-circle-outline"></ion-icon> Adicionar
+                </button>
+            </form>
+        </div>
+
+        <div id="task-list-container">
+            <h2> Essas são suas tarefas:</h2>
+            <ul id="task-list">
+                <li class="task-box template hide">
+                    <span class="task-title"></span>
+                        <ion-icon class="done-btn" name="checkmark"></ion-icon>
+                        <ion-icon class="remove-btn" name="close"></ion-icon>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    
+    <script src="js/script.js"> </script>
+    <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
+</body>
+</html>

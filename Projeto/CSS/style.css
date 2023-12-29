@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    background: linear-gradient(to right, #9932cc, #ff4500);
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#tasks-container{
+    width: 500;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#task-title{ 
+    height: 50px; /* grossura do input*/
+    width: 440;
+    border: 2px solid #333;
+    background: #fff;
+    padding: 15px;
+    font-size: 18px;
+    margin-left: -60;
+
+    
+    
+}
+
+#add-btn{
+    position: absolute;
+    background: #fff;
+    cursor: pointer;
+    transition: .5s;
+    margin-left: 1; 
+    height: 50;
+    width: 75;
+    font-weight: bolder;
+
+}
+
+
+#task-list{
+    list-style: none;
+    padding-left: 0;
+
+}
+
+#task-list li{
+    text-align: left;
+    line-height: 50px; 
+    position: relative;
+    border-bottom: 3px solid #9932cc;
+    background-color: #fff;
+    color: black;
+    padding-left: 15px;
+    transition: .5s;
+    font-weight: bolder;
+    border: 2px solid #333;
+    margin-top: 15;
+    
+}
+
+#task-list ion-icon{
+    position: absolute;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 5px;
+ 
+}
+
+#tasks-header{
+    margin-top: 40px;
+}
+
+#add-task-form{
+    position: relative;
+}
+
+#add-task-form input ::placeholder {
+    color: purple;
+}
+
+
+#add-task-form input :focus {
+    outline: none;
+}
+
+
+
+#add-btn:hover{
+    background-color: #9932cc;
+    color: #fff;
+}
+
+ion-icon{
+    font-size: 30px;
+}
+
+.done-btn{
+    right:  40px;
+    bottom: 5px;
+ 
+}
+.done-btn:hover{
+    color: #fff;
+    background-color:greenyellow;
+    top: 0px;
+    bottom: 0px;
+}
+.remove-btn{
+    right: 0;
+    bottom: 5px;
+    
+ 
+}
+.remove-btn:hover{
+    position: absolute;
+    color: #fff;
+    background-color:#ff4500;
+    top: 0px;
+    bottom: 0px;
+    
+   
+
+}
+
+
+.hide{
+    display: none;
+}
+
+#task-list li.done{
+    background-color:#34073D ;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+
+
+ /*   
+
+
+#add-task-form {
+    display: inline-block; /* Alinhe o formulário e o botão horizontalmente */
+/*
+}
+
+#task-title {
+    width: 300px; /* Ajuste a largura do campo de texto conforme necessário *//*
+    border: 2px solid #333; /* Ajuste a grossura e a cor da borda conforme necessário *//*
+    padding: 4px; /* Aumentar a grossura da barra de input *//*
+    margin-right: 5px; /* Adicione algum espaço entre o campo de texto e o botão *//*
+}
+
+#add-btn {
+    border: 2px solid #333; /* Ajuste a grossura e a cor da borda conforme necessário *//*
+    padding: 3.5px; /* Ajuste o preenchimento para igualar à barra de input *//*
+    cursor: pointer; /* Mude o cursor para indicar que é clicável *//*
+}
+

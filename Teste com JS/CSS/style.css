@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+    margin-top: 300px;
+}
+
+
+
+.btn-primary{
+    text-align: center;
+    color: brown;
+    height: 70px;
+    width: 70px;
+    background-color: blue;
+}
